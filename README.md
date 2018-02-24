@@ -1,1 +1,3 @@
-# jQuery2
+# jQueryProject
+
+Used jQuery concepts
