@@ -1,0 +1,124 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <meta charset="UTF-8">
+      <meta name="description" content="jQuery Generic Validation">
+      <meta name="keywords" content="HTML,CSS,Bootstrap,JavaScript">
+      <meta name="author" content="Sameer">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <title>jQuery Project </title>
+   </head>
+   <body style="background-color:#97b0d8;">
+      <!-- Nav bar Content -->
+      <ul class="tabs">
+         <button class="tab-link current" data-tab="tab-1" >Sliders</button>
+         <button class="tab-link" data-tab="tab-2" >Tooltip & TypeAHead</button>
+         <button class="tab-link" data-tab="tab-3" > Lightbox</button>
+         <button class="tab-link" data-tab="tab-4" >Star & Modal</button>
+      </ul>
+      <!-- Tab1 Contents -->
+      <div id="tab-1" class="tab-content current">
+         <!--  Slider Content -->
+         <div class="slider" >
+            <ul>
+               <li> <img src="assets/images/1.jpg"></li>
+               <li><img src="assets/images/2.gif" ></li>
+               <li><img src="assets/images/3.jpg" ></li>
+            </ul>
+            <!--  Prev and Next Controls -->
+            <a href="#" class="next">></a>
+            <a href="#" class="prev"><</a>
+         </div>
+      </div>
+      <!--  Tab2 Contents -->
+      <div id="tab-2" class="tab-content">
+         <!-- Tooltip and TypeAHead Content -->
+         <h3>Please choose Country:</h3>
+         <a href="#" data-toggle="tooltip" data-placement="top" title="Shipping available Countries">
+         <input type="text" name="country" placeholder="Choose Country" id="country"></a>
+      </div>
+      <!-- Tab3 Contents -->
+      <div id="tab-3" class="tab-content">
+         <!-- Lightbox Content -->
+         <div class="text-center">
+            <div class="col-sm-3">
+               <a data-fancybox="gallery" href="assets/images/4.jpg"><img src="assets/images/4.jpg" ></a><br>
+               <b>Puma</b>
+            </div>
+            <div class="col-sm-3">
+               <a data-fancybox="gallery" href="assets/images/5.png" 
+                  ">
+               <img src="assets/images/5.png"></a><br>
+               <b>Fastrack</b>
+            </div>
+            <div class="col-sm-3">
+               <a data-fancybox="gallery" href="assets/images/6.jpg">
+               <img src="assets/images/6.jpg"></a><br>
+               <b>Nike</b>
+            </div>
+            <div class="col-sm-3">
+               <a data-fancybox="gallery" href="assets/images/7.jpg" >
+               <img src="assets/images/7.jpg"></a><br>
+               <b>Woodland</b>
+            </div>
+         </div>
+      </div>
+      <!-- Tab4 Contents -->
+      <div id="tab-4" class="tab-content">
+      <table>
+         <tr>
+            <td> Name:</td>
+            <td><input type="text" name="name" placeholder="Enter name here.."></td>
+         </tr>
+         <!-- Star Contents -->
+         <div class="Rating" style="text-align: center;">
+            <tr>
+               <td> Please rate us:</td>
+               <td style="padding: 15px;"> <i class="glyphicon glyphicon-star star"></i>
+                  <i class="glyphicon glyphicon-star star1"></i>
+                  <i class="glyphicon glyphicon-star star2"></i>
+                  <i class="glyphicon glyphicon-star star3"></i>
+                  <i class="glyphicon glyphicon-star star4"></i>
+               </td>
+            </tr>
+         </div>
+         <tr>
+            <td> Feedback:</td>
+            <td><textarea rows="5" cols="20" id="text" style="resize:none;" ></textarea></td>
+         </tr>
+         <!-- Modal Contents -->
+         <tr>
+            <td></td>
+            <td style="padding-top: 15px;"><button type="button" class="btn btn-success btn-lg"  id="myBtn">Submit</button></td>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+               <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Thank you</h4>
+                     </div>
+                     <div class="modal-body">
+                        <p>Your feedback has been sent...</p>
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                     </div>
+                  </div>
+               </div>
+         </tr>
+      </table>
+      </div>
+   </body>
+   <script type="text/javascript" src="assets/js/script.js"></script> 
+</html>
+
